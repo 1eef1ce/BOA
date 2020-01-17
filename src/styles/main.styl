@@ -1,0 +1,1662 @@
+fontRegular = Courier10CyrBT
+fontBold = CourierNewBold
+fontHeading = ArameMono
+fontVar = RobotoMedium
+fontVarBold = RobotoBold
+
+colorBlack = #000000
+colorWhite = #ffffff
+colorDark = #121212
+colorDarkGrey = #1b1b1b
+colorWarmGreen = #07d24c
+colorColdGreen = #1ccb62
+colorRed = #eb5757
+
+gradient-ltr()
+  background colorDarkGrey linear-gradient(-90deg, #121212 8.72%, rgba(18, 18, 18, 0) 88.74%)
+
+gradient-ttb()
+  background colorDarkGrey linear-gradient(0deg, #121212 8.72%, rgba(18, 18, 18, 0) 88.74%)
+
+@font-face
+  font-family Courier10CyrBT
+  src url(../assets/fonts/Courier10CyrBT.woff2) format('woff2'),
+  url(../assets/fonts/Courier10CyrBT.woff) format('woff')
+
+@font-face
+  font-family CourierNewBold
+  src url(../assets/fonts/CourierNewBold.woff2) format('woff2'),
+  url(../assets/fonts/CourierNewBold.woff) format('woff')
+
+@font-face
+  font-family ArameMono
+  src url(../assets/fonts/ArameMono.woff2) format('woff2'),
+  url(../assets/fonts/ArameMono.woff) format('woff')
+
+@font-face
+  font-family RobotoMedium
+  src url(../assets/fonts/RobotoMono-Medium.woff2) format('woff2'),
+  url(../assets/fonts/RobotoMono-Medium.woff) format('woff')
+
+@font-face
+  font-family RobotoBold
+  src url(../assets/fonts/RobotoMono-Bold.woff2) format('woff2'),
+  url(../assets/fonts/RobotoMono-Bold.woff) format('woff')
+
+/** General **/
+.row
+  &:before
+  &:after
+    display inline-block !important
+    content normal
+
+input
+textarea
+  resize none
+  &:focus
+    box-shadow none!important
+
+button
+a
+  display inline-block
+  text-decoration none
+  &:hover
+  &:focus
+    color inherit
+    outline none
+    text-decoration none
+    box-shadow none
+
+button
+  padding 0
+  border 0
+
+img
+  display block
+  margin auto
+  max-width 100%
+  max-height 100%
+
+ul
+  list-style none
+  margin 0
+  padding 0
+
+body
+  position relative
+  font-family fontRegular, Arial, sans-serif
+  font-size 14px
+  color colorWhite
+  line-height 1
+  background-color colorDark
+
+/** Containers **/
+.container
+  position relative
+  padding 0 15px
+
+  @media (min-width 768px)
+    max-width 700px
+    padding 0
+
+  @media (min-width 1440px)
+    max-width 1280px
+
+  @media (min-width 1921px)
+    max-width 1600px
+
+.row
+  margin-left 0
+  margin-right 0
+
+  @media (min-width 768px)
+    margin-left -10px
+    margin-right -10px
+
+  @media (min-width 1921px)
+    margin-left -25px
+    margin-right -25px
+
+.col
+[class*="col-"]
+  padding-left 0
+  padding-right 0
+
+  @media (min-width 768px)
+    padding-left 10px
+    padding-right 10px
+
+  @media (min-width 1921px)
+    padding-left 25px
+    padding-right 25px
+
+section
+  margin-bottom 100px
+
+  @media (min-width 768px)
+    margin-bottom 120px
+
+  @media (min-width 1440px)
+    margin-bottom 150px
+
+/** Headings **/
+h1
+.h1
+  font-family fontHeading
+  font-size 26px
+  line-height 1.5
+  color colorWhite
+  text-transform uppercase
+  margin-bottom 20px
+
+  @media (min-width 768px)
+    font-size 34px
+    line-height 1.3
+    margin-bottom 15px
+
+  @media (min-width 1440px)
+    font-size 64px
+    margin-bottom 30px
+
+  @media (min-width 1921px)
+    font-size 96px
+
+h2
+.h2
+  font-family fontHeading
+  font-size 20px
+  line-height 1.5
+  color colorWhite
+  text-transform uppercase
+  margin-bottom 30px
+
+  @media (min-width 768px)
+    font-size 25px
+    line-height 1.3
+
+  @media (min-width 1440px)
+    font-size 40px
+
+  @media (min-width 1921px)
+    font-size 60px
+
+.has-before
+  position relative
+  &:before
+    content ""
+    position absolute
+    width 3px
+    height 15px
+    background colorColdGreen
+    top -25px
+    left 0
+    right 0
+    margin auto
+
+    @media (min-width 768px)
+      width 5px
+      height 18px
+      top -33px
+
+    @media (min-width 1440px)
+      height 22px
+      top -37px
+
+.before-horizontal
+  &:before
+
+    @media (min-width 768px)
+      width 18px
+      height 5px
+      top -20px
+      right auto
+
+    @media (min-width 1440px)
+      width 22px
+
+h3
+.h3
+  font-family fontVar
+  font-size 18px
+  line-height 1.5
+  color colorWhite
+  text-transform uppercase
+  margin-bottom 6px
+
+  @media (min-width 768px)
+    font-size 20px
+    line-height 1.3
+    margin-bottom 10px
+
+  @media (min-width 1440px)
+    font-size 28px
+
+  @media (min-width 1921px)
+    font-size 42px
+
+/** Regular text **/
+.text-regular
+  font-family fontRegular
+  font-size 14px
+  line-height 1.5
+  color colorWhite
+  opacity 0.7
+  margin-bottom 0
+
+  @media (min-width 768px)
+    line-height 1.7
+
+  @media (min-width 1440px)
+    font-size 20px
+
+  @media (min-width 1921px)
+    font-size 30px
+
+/** Buttons **/
+.btn
+  display flex
+  align-items center
+  justify-content center
+  font-family fontVarBold
+  font-size 12px
+  letter-spacing 1px
+  text-transform uppercase
+  border 0
+  border-radius 0
+  padding 0
+  &:focus
+    box-shadow none
+
+  @media (min-width 768px)
+    font-size 13px
+
+  @media (min-width 1440px)
+    font-size 17px
+
+  @media (min-width 1921px)
+    font-size 25px
+
+.btn-link
+  position relative
+  z-index 100
+  width 180px
+  height 40px
+  color colorBlack
+  background colorWarmGreen
+  &:hover
+  &:focus
+    color colorBlack
+    text-decoration none
+    background colorWhite
+
+  @media (min-width 768px)
+    width 170px
+
+  @media (min-width 1440px)
+    width 200px
+    height 55px
+
+  @media (min-width 1921px)
+    width 300px
+    height 82px
+
+.btn-border
+  position absolute
+  z-index 10
+  content ""
+  width 180px
+  height 40px
+  border 1px solid colorWhite
+  top 8px
+  right -8px
+
+  @media (min-width 768px)
+    width 170px
+    border 2px solid colorWhite
+
+  @media (min-width 1440px)
+    width 200px
+    height 55px
+
+  @media (min-width 1921px)
+    width 300px
+    height 82px
+
+.btn-short
+  width 122px
+  & + .btn-border
+    width 122px
+
+  @media (min-width 768px)
+    width 138px
+    & + .btn-border
+      width 138px
+
+  @media (min-width 1440px)
+    width 200px
+    height 55px
+    & + .btn-border
+      width 200px
+      height 55px
+
+  @media (min-width 1921px)
+    width 300px
+    height 82px
+    & + .btn-border
+      width 300px
+      height 82px
+
+.btn-signup
+  position relative
+  width 70px
+  height 25px
+  background colorDark
+  font-family fontVarBold
+  font-size 10px
+  color colorWarmGreen
+  border-left 2px solid colorWarmGreen
+  border-right 2px solid colorWarmGreen
+  transition background ease-in-out 0.2s
+  &:before
+  &:after
+    content ""
+    position: absolute
+    top 0
+    left 0
+    right 0
+    height 2px
+    background colorWarmGreen
+    transition all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 50ms
+  &:before
+    right calc(38% + 8px)
+  &:after
+    left calc(62% + 8px)
+  span
+    display block
+    &:before
+    &:after
+      content ""
+      position absolute
+      bottom 0
+      left 0
+      right 0
+      height 2px
+      background colorWarmGreen
+      transition all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 50ms
+    &:before
+      right calc(62% + 8px)
+    &:after
+      left calc(38% + 8px)
+  &:hover
+    color colorWarmGreen
+    background rgba(7, 210, 76, .2)
+    &:before
+      right calc(62% + 8px)
+    &:after
+      left calc(38% + 8px)
+    span
+      &:before
+       right calc(38% + 8px)
+    span
+      &:after
+       left calc(62% + 8px)
+
+  @media (min-width 768px)
+    width 110px
+    height 40px
+    font-size 13px
+
+  @media (min-width 1440px)
+    width 130px
+    height 46px
+    font-size 15px
+
+  @media (min-width 1921px)
+    width 195px
+    height 69px
+    font-size 22px
+
+.btn-login
+  background rgba(255, 255, 255, 0.08) url("../assets/images/login.svg") no-repeat center
+  width 25px
+  height 25px
+  margin-left 10px
+
+  @media (min-width 768px)
+    display none
+
+/** Links **/
+.link-more
+  font-family fontHeading
+  font-size 10px
+  line-height 1.2
+  letter-spacing 2px
+  text-transform uppercase
+  color colorWhite
+
+  @media (min-width 1440px)
+    font-size 14px
+
+  @media (min-width 1921px)
+    font-size 21px
+
+.footer-link
+  font-family fontRegular
+  font-size 14px
+  line-height 1.7
+  color colorWhite
+  opacity 0.6
+  margin-bottom 15px
+
+  @media (min-width 768px)
+    font-size 12px
+    margin-bottom 0
+    & + .footer-link
+      margin-left 25px
+
+  @media (min-width 1440px)
+    font-size 16px
+
+  @media (min-width 1921px)
+    font-size 21px
+
+.design-link
+  opacity 1
+
+.link-social
+  display inline-flex
+  opacity 0.7
+  +.link-social
+    margin-left 20px
+  &:hover
+  &:focus
+    opacity 1
+
+  @media (min-width 1921px)
+    img
+      width 23px
+
+.link-login
+  display none
+  font-family fontVar
+  font-size 10px
+  text-transform uppercase
+  color colorWhite
+  &:hover
+  &:focus
+    color colorColdGreen
+
+  @media (min-width 768px)
+    display inline-block
+    font-size 13px
+    margin 0 32px
+
+  @media (min-width 1440px)
+    font-size 15px
+
+  @media (min-width 1921px)
+    font-size 22px
+
+/** Header **/
+header
+.header
+  position absolute
+  top 0
+  width 100%
+  z-index 9999
+
+.navbar
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px 0
+
+  @media (min-width 768px)
+    padding 25px 0
+
+  @media (min-width 1440px)
+    padding 36px 0
+
+.navbar-right
+  display flex
+  align-items center
+  justify-content flex-end
+
+.logo
+  max-height 25px
+
+  @media (min-width 768px)
+    max-height 40px
+
+  @media (min-width 1440px)
+    max-height 50px
+
+  @media (min-width 1921px)
+    max-height 75px
+    height 75px
+
+/** Footer **/
+footer
+.footer
+  padding 20px 0
+  border-top 2px solid rgba(255, 255, 255, 0.1)
+  text-align center
+
+  @media (min-width 768px)
+    padding 25px 0
+    text-align left
+
+  @media (min-width 1440px)
+    padding 40px 0
+
+.footer-content-wrapper
+  display flex
+  flex-direction column-reverse
+  align-items center
+  justify-content space-between
+
+  @media (min-width 768px)
+    flex-direction row
+
+.footer-content
+  display flex
+  align-items center
+  flex-direction column-reverse
+
+  @media (min-width 768px)
+    flex-direction row
+
+.copyright
+  display inline-block
+  font-size 14px
+  opacity 0.6
+
+  @media (min-width 768px)
+    font-size 12px
+    margin-right 12px
+
+  @media (min-width 1440px)
+    font-size 16px
+
+  @media (min-width 1921px)
+    font-size 24px
+
+/** Top **/
+.section-top
+  position relative
+  overflow hidden
+  display flex
+  flex-direction column
+  justify-content center
+  height 100vh
+  margin-bottom 0
+
+  @media (min-width 768px)
+    margin-bottom 100px
+
+  @media (min-width 1440px)
+    margin-bottom 150px
+
+.subtitle
+  font-family fontRegular
+  font-size 16px
+  line-height 1.5
+  color colorWhite
+  opacity 0.7
+
+  @media (min-width 768px)
+    font-size 14px
+    line-height 1.2
+
+  @media (min-width 1440px)
+    font-size 24px
+
+  @media (min-width 1921px)
+    font-size 36px
+
+.content-top
+  z-index 10
+
+  @media (min-width 768px)
+    padding 0 40px
+
+  @media (min-width 1440px)
+    padding 0 110px
+
+.content-bottom
+  display flex
+  align-items flex-end
+  justify-content center
+  position absolute
+  bottom 30px
+  left 0
+  right 0
+  z-index 10
+
+.hidden-mobile
+  display none
+
+  @media (min-width 768px)
+    display block
+
+.content-left
+  position absolute
+  left 0
+  bottom 22px
+  transform rotate(-90deg)
+  transform-origin left
+
+.content-right
+  position absolute
+  right 0
+  bottom 42px
+  transform rotate(90deg)
+  transform-origin right
+
+.text-vertical
+  font-family fontHeading
+  font-size 10px
+  letter-spacing 2px
+  text-transform uppercase
+  color colorWhite
+  opacity 0.15
+
+  @media (min-width 1440px)
+    font-size 14px
+
+  @media (min-width 1921px)
+    font-size 21px
+
+.more-arrow
+  display none
+
+  @media (min-width 768px)
+    display block
+    margin-top 7px
+
+  @media (min-width 1440px)
+    display none
+
+.more-mouse
+  margin-top 15px
+
+  @media (min-width 768px)
+    display none
+
+  @media (min-width 1440px)
+    display block
+
+  @media (min-width 1921px)
+    width 33px
+
+.social
+  position absolute
+  right 0
+
+.line
+  position absolute
+  top 0
+  width 1px
+  height 100%
+  background rgba(255, 255, 255, 0.05)
+  span
+    position absolute
+    left -1px
+    width 3px
+    height 12px
+    background colorColdGreen
+
+    @media (min-width 1440px)
+      left -2px
+      width 5px
+      height 20px
+
+.line1
+  left 20%
+  span
+    animation down 5s infinite linear
+
+  @media (min-width 768px)
+    left 10%
+
+  @media (min-width 1440px)
+    left 12%
+
+.line2
+  left 50%
+  span
+    animation down 7s infinite linear
+
+  @media (min-width 768px)
+    left 30%
+
+  @media (min-width 1440px)
+    left 27%
+
+.line3
+  left 80%
+  span
+    animation down 3s infinite linear
+
+  @media (min-width 768px)
+    left 50%
+
+  @media (min-width 1440px)
+    left 42%
+
+.line4
+  display none
+  span
+    animation down 6s infinite linear
+
+  @media (min-width 768px)
+    display block
+    left 70%
+
+  @media (min-width 1440px)
+    left 57%
+
+.line5
+  display none
+  span
+    animation down 4s infinite linear
+
+  @media (min-width 768px)
+    display block
+    left 90%
+
+  @media (min-width 1440px)
+    left 72%
+
+.line6
+  display none
+  span
+    animation down 5s infinite linear
+
+  @media (min-width 1440px)
+    display block
+    left 87%
+
+@keyframes down
+  0%
+    top 0
+  50%
+    top 50%
+  100%
+    top 100%
+
+/** Process **/
+.centered
+  display flex
+  align-items center
+  justify-content center
+
+.centered-mobile
+
+  @media (min-width 768px)
+    justify-content flex-start
+
+.sticker
+  display inline-flex
+  align-items center
+  justify-content center
+  padding 4px 8px
+  font-family fontBold
+  font-size 11px
+  letter-spacing 0.03em
+  text-transform uppercase
+  color colorBlack
+  background colorWarmGreen
+  margin 15px 0
+
+  @media (min-width 768px)
+    padding 4px 6px
+    font-size 10px
+    margin 0 0 20px
+
+  @media (min-width 1440px)
+    padding 4px 10px
+    font-size 13px
+    margin 0 0 25px
+
+  @media (min-width 1921px)
+    padding 6px 15px
+    font-size 19px
+
+.process-stages
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  align-content space-between
+  height 100%
+
+  @media (min-width 768px)
+    width 330px
+    height 303px
+
+  @media (min-width 1440px)
+    width 542px
+    height 500px
+
+  @media (min-width 1921px)
+    width 813px
+    height 750px
+
+.process-stage
+  position relative
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+  padding 20px 15px 20px 20px
+  margin-bottom 10px
+  gradient-ltr()
+
+  @media (min-width 768px)
+    flex-direction column
+    align-items flex-start
+    width 132px
+    height 119px
+    background colorDark
+    border 2px solid rgba(255, 255 255, 0.1)
+    padding 15px 10px 10px 15px
+    margin-bottom 0
+    &:after
+      position absolute
+      content ""
+      background url("../assets/images/arrow-right.svg")
+      background-size 44px
+      width 44px
+      height 8px
+
+  @media (min-width 1440px)
+    width 217px
+    height 196px
+    padding 25px 20px 20px 25px
+    &:after
+      background-size 70px
+      width 70px
+      height 12px
+
+  @media (min-width 1921px)
+    width 325px
+    height 294px
+    &:after
+      background-size 105px
+      width 105px
+      height 18px
+
+.stage1
+  &:after
+
+    @media (min-width 768px)
+      bottom 1em
+      right -45%
+
+    @media (min-width 1440px)
+      bottom 50%
+      right -43%
+
+.stage2
+  &:after
+
+    @media (min-width 768px)
+      bottom -16%
+      left 1em
+      transform rotate(90deg)
+      transform-origin left
+
+    @media (min-width 1440px)
+      bottom -16%
+      left 50%
+
+.stage3
+  &:after
+
+    @media (min-width 768px)
+      top -52%
+      right 1em
+      transform rotate(-90deg)
+      transform-origin right
+
+    @media (min-width 1440px)
+      top -50%
+      right 50%
+
+.stage4
+  &:after
+
+    @media (min-width 768px)
+      top 1em
+      left -45%
+      transform rotate(180deg)
+
+    @media (min-width 1440px)
+      top 50%
+      left -43%
+
+.process-img
+  display flex
+  flex-shrink 0
+  align-items center
+  justify-content center
+  position relative
+  width 95px
+  height 72px
+
+  @media (min-width 768px)
+    width 75px
+    height 52px
+
+  @media (min-width 1440px)
+    width 121px
+    height 84px
+
+  @media (min-width 1921px)
+    width 181px
+    height 126px
+
+.process-title
+  font-family fontHeading
+  font-size 16px
+  line-height 1.4
+  text-transform uppercase
+  color colorWhite
+  opacity 0.7
+  width 55%
+
+  @media (min-width 768px)
+    font-size 12px
+    line-height 1.3
+    width 100%
+
+  @media (min-width 1440px)
+    font-size 20px
+
+  @media (min-width 1921px)
+    font-size 30px
+
+.advantages
+
+  @media (min-width 1440px)
+    gradient-ltr()
+    padding 30px 0
+    margin-bottom 40px
+
+.advantage
+  margin 30px 0
+
+  @media (min-width 1440px)
+    margin 0
+    & +.advantage
+      margin-top 20px
+
+.advantage-title
+  font-family fontHeading
+  font-size 18px
+  line-height 1.5
+  text-transform uppercase
+  color colorWarmGreen
+  margin-bottom 5px
+
+  @media (min-width 768px)
+    line-height 1
+
+  @media (min-width 1440px)
+    font-size 28px
+    line-height 1.3
+
+  @media (min-width 1921px)
+    font-size 42px
+
+.advantage-text
+  font-family fontHeading
+  font-size 16px
+  line-height 1.5
+  letter-spacing 1px
+  text-transform uppercase
+  color colorWhite
+  opacity 0.7
+
+  @media (min-width 768px)
+    font-size 11px
+
+  @media (min-width 1440px)
+    font-size 17px
+
+  @media (min-width 1921px)
+    font-size 26px
+
+/** Community **/
+.community-img
+  @media (min-width 1921px)
+    width 100%
+
+.community-text
+  text-align center
+  margin-bottom 30px
+
+  @media (min-width 768px)
+    text-align left
+    margin-bottom 20px
+
+  @media (min-width 1440px)
+    margin-bottom 30px
+
+/** Courses **/
+.course
+  display flex
+  flex-direction column
+  justify-content space-between
+  gradient-ttb()
+  padding 20px
+  margin-bottom 40px
+  &:hover
+    background colorDarkGrey
+    outline 2px solid colorWhite
+
+  @media (min-width 768px)
+    height 345px
+    padding 20px 15px 20px 20px
+    margin-bottom 0
+
+  @media (min-width 1440px)
+    height 483px
+    padding 40px 40px 30px 40px
+
+  @media (min-width 1921px)
+    height 725px
+
+.course-img
+  height 110px
+  margin 0 0 20px
+  flex-shrink 0
+
+  @media (min-width 1440px)
+    height 170px
+    margin 0 0 40px
+
+  @media (min-width 1921px)
+    height 255px
+
+.course-description
+
+  @media (min-width 768px)
+    overflow hidden
+    height 5em
+
+  @media (min-width 1440px)
+    height 3.75em
+
+.course-bottom
+  display flex
+  align-items center
+  justify-content space-between
+  margin-top 15px
+
+  @media (min-width 1440px)
+    margin-top 20px
+
+.course-price
+  font-family fontHeading
+  font-size 26px
+  line-height 1.3
+  text-transform uppercase
+  color colorWarmGreen
+
+  @media (min-width 768px)
+    font-size 30px
+
+  @media (min-width 1440px)
+    font-size 45px
+
+  @media (min-width 1921px)
+    font-size 68px
+
+.course-price-old
+  font-family fontHeading
+  font-size 14px
+  line-height 1
+  text-transform uppercase
+  color colorWhite
+  opacity 0.8
+  position relative
+  &:before
+    position absolute
+    content ""
+    width 100%
+    height 2px
+    background #d0d0d0
+    top 0.45em
+    left 0
+    transform rotate(21.8deg)
+
+  @media (min-width 768px)
+    font-size 18px
+    letter-spacing 0.05em
+
+  @media (min-width 1440px)
+    font-size 26px
+
+  @media (min-width 1921px)
+    font-size 39px
+
+/** About **/
+.about-img
+
+  @media (min-width 1921px)
+    width 100%
+
+/** Reasons **/
+.reasons
+
+  @media (min-width 768px)
+    margin-left 20px
+
+  @media (min-width 1440px)
+    margin 0 90px 0 110px
+
+.reason-wrapper
+  align-items center
+  margin-bottom 30px
+  &:last-of-type
+    margin-bottom 0
+
+  @media (min-width 768px)
+    margin-bottom 40px
+
+  @media (min-width 1440px)
+    margin-bottom 80px
+
+.reason
+  position relative
+  gradient-ttb()
+  padding 20px
+
+  @media (min-width 768px)
+    gradient-ltr()
+    padding 20px 5px 20px 75px
+
+  @media (min-width 1440px)
+    width 650px
+    padding 30px 24px 30px 90px
+
+  @media (min-width 1921px)
+    width 975px
+    padding 30px 24px 30px 135px
+
+.reason-top
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 20px
+
+  @media (min-width 768px)
+    position absolute
+    top 20px
+    left -20px
+    margin 0
+
+.reason-img
+  height 116px
+  margin 0
+
+  @media (min-width 768px)
+    height 120px
+    margin auto
+    .reason-top &
+      display none
+
+  @media (min-width 1440px)
+    height 176px
+
+  @media (min-width 1921px)
+    height 264px
+
+.border-wrapper
+  display inline-block
+  position relative
+
+.reason-number
+  position relative
+  z-index 100
+  display flex
+  align-items center
+  justify-content center
+  width 50px
+  height 50px
+  background colorColdGreen
+  font-family fontHeading, Arial, sans-serif
+  font-size 22px
+  text-transform uppercase
+  color colorBlack
+
+  @media (min-width 768px)
+    width 60px
+    height 60px
+    font-size 26px
+
+  @media (min-width 1440px)
+    width 70px
+    height 70px
+    font-size 32px
+
+  @media (min-width 1921px)
+    width 100px
+    height 100px
+    font-size 48px
+
+.reason-border
+  position absolute
+  z-index 10
+  content ""
+  width 50px
+  height 50px
+  border 1px solid colorWhite
+  top 8px
+  left -8px
+
+  @media (min-width 768px)
+    width 60px
+    height 60px
+    border 2px solid colorWhite
+    left auto
+    right -8px
+
+  @media (min-width 1440px)
+    width 70px
+    height 70px
+
+  @media (min-width 1921px)
+    width 100px
+    height 100px
+
+/** Mentors **/
+.swiper-mentors
+  .swiper-slide
+    &:hover
+    &:focus
+      .mentor-img
+        filter grayscale(0) drop-shadow(0px 4px 50px rgba(28, 203, 98, 0.3))
+
+        @media (min-width 1440px)
+          filter grayscale(0) drop-shadow(0px 4px 100px rgba(28, 203, 98, 0.3))
+
+  .swiper-slide
+    width 320px
+
+    @media (min-width 1024px)
+      width 33.333%
+
+.mentor
+  position relative
+  margin auto
+  text-align center
+
+.mentor-img
+  width 200px
+  filter grayscale(1)
+
+  @media (min-width 768px)
+    width 220px
+
+  @media (min-width 1440px)
+    width 405px
+
+  @media (min-width 1921px)
+    width 600px
+
+.img-gradient
+  position absolute
+  bottom 0
+  width 100%
+  height 50%
+  background: linear-gradient(359.71deg, #121212 8.72%, rgba(18, 18, 18, 0) 88.74%);
+
+.mentor-name
+  font-family fontVar
+  font-size 18px
+  line-height 1.2
+  text-transform uppercase
+  color colorColdGreen
+  margin-bottom 5px
+
+  @media (min-width 768px)
+    font-size 20px
+
+  @media (min-width 1440px)
+    font-size 27px
+
+  @media (min-width 1921px)
+    font-size 41px
+
+.custom-nav
+  display none
+
+  @media (min-width 768px)
+    display flex
+    position absolute
+    right 0
+    bottom 0.5em
+
+  @media (min-width 1440px)
+    bottom 1em
+
+.custom-nav-prev
+.custom-nav-next
+  cursor pointer
+  outline none
+  &:hover
+  &:focus
+    svg
+      path
+        stroke colorColdGreen
+
+  @media (min-width 1440px)
+    svg
+      width 55px
+      height 32px
+
+  @media (min-width 1921px)
+    svg
+      width 82px
+      height 48px
+
+.custom-nav-prev
+
+  @media (min-width 768px)
+    margin-right 11px
+
+  @media (min-width 1440px)
+    margin-right 15px
+
+.custom-nav-next
+
+  @media (min-width 768px)
+    margin-left 11px
+
+  @media (min-width 1440px)
+    margin-left 15px
+
+/** Partners **/
+.custom-scrollbar
+  display flex
+  align-items center
+  height 2px
+  border-radius 50%
+  margin-bottom 25px
+  background linear-gradient( rgba(255, 255, 255, 0) 0%,
+                              rgba(255, 255, 255, 0.05) 14.64%,
+                              rgba(255, 255, 255, 0.07) 53.35%,
+                              rgba(255, 255, 255, 0.05) 86.16%,
+                              rgba(255, 255, 255, 0) 100%)
+
+  @media (min-width 1440px)
+    margin-bottom 50px
+
+.swiper-scrollbar-drag
+  height 3px
+  background colorWarmGreen
+
+  @media (min-width 768px)
+    height 4px
+
+  @media (min-width 1440px)
+    height 5px
+
+.swiper-wrapper
+  display flex
+  align-items center
+  justify-content space-between
+
+.swiper-partners
+  .swiper-slide
+    &:hover
+    &:focus
+      .partner-img
+        opacity 1
+
+  .swiper-slide
+    width 120px
+
+    @media (min-width 768px)
+      width 170px
+
+    @media (min-width 1440px)
+      width 325px
+
+.partner-img
+  width 100px
+  opacity 0.3
+
+  @media (min-width 768px)
+    width 120px
+
+  @media (min-width 1440px)
+    width 200px
+
+  @media (min-width 1921px)
+    width 300px
+
+/** Form **/
+.section-form
+  padding-top 105px
+
+  @media (min-width 768px)
+    padding-top 150px
+    h2
+    .h2
+      width 115%
+
+  @media (min-width 1440px)
+    padding-top 220px
+    h2
+    .h2
+      width 150%
+
+form
+  margin-top 30px
+
+.form-group
+  position relative
+  margin-bottom 20px
+
+  @media (min-width 1921px)
+    margin-bottom 30px
+
+.form-control
+  height 55px
+  padding 0 20px
+  font-family fontHeading
+  font-size 18px
+  color colorWhite
+  line-height 1.2
+  letter-spacing 1px
+  text-transform uppercase
+  border 2px solid rgba(255, 255, 255, 0.4)
+  border-radius 0
+  transition none
+  background transparent
+  &.empty
+    background #303030
+    border-color transparent
+  &:hover
+    & + .form-input-label
+      color colorWhite
+  &:focus
+    color colorWhite
+    background transparent
+    box-shadow none
+    outline none
+    border-color rgba(255, 255, 255, 0.4)
+    & + .form-input-label
+      color rgba(255, 255, 255, 0.6)
+
+  @media (min-width 1921px)
+    height 82px
+    font-size 27px
+
+textarea
+  &.form-control
+    padding 20px
+
+.form-input-label
+  font-family fontHeading
+  font-size 15px
+  letter-spacing 1px
+  text-transform uppercase
+  color rgba(255, 255, 255, 0.6)
+  position absolute
+  pointer-events none
+  top 1.25em
+  left 20px
+  right 20px
+  transition 0.2s ease all
+  padding 0 5px
+  margin-bottom 0
+
+  @media (min-width 1921px)
+    font-size 22px
+
+.form-control:focus ~ .form-input-label
+.form-control:valid ~ .form-input-label
+  top -5px
+  font-size 12px
+  background colorDark
+
+  @media (min-width 1921px)
+    font-size 18px
+
+.form-check
+  padding-left 0
+
+.form-check-input
+  position absolute
+  opacity 0
+  z-index -1
+
+.custom-control-label
+  font-family fontRegular
+  font-size 15px
+  line-height 1.7
+  color #b8b8b8
+  padding-left 28px
+  &:before
+  &:after
+    position absolute
+    content ""
+    width 18px
+    height 18px
+    border 0
+    border-radius 2px
+    top 2px
+    left 0
+    margin 0
+    background #303030
+
+  @media (min-width 1921px)
+    font-size 22px
+    padding-left 42px
+    &:before
+    &:after
+      width 26px
+      height 26px
+
+.custom-control-input
+  &:checked
+    &~.custom-control-label
+      &:before
+        background-color #303030
+      &:after
+        width 10px
+        height 10px
+        top 6px
+        left 4px
+        background colorWarmGreen
+
+        @media (min-width 1921px)
+          width 15px
+          height 15px
+          top 7px
+          left 5px
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before
+  background-color inherit
+
+.custom-control-input:focus ~ .custom-control-label::before
+  box-shadow: none
+
+.form-link
+  color colorWhite
+  text-decoration underline
+  &:hover
+  &:focus
+    color colorWhite
+    text-decoration underline
+
+.form-control.is-valid
+.was-validated .form-control:valid
+  border-color colorColdGreen
+  padding-right 0
+  background-image none
+
+.form-control.is-valid:focus
+.was-validated .form-control:valid:focus
+  border-color colorColdGreen
+  outline none
+
+.form-control.is-invalid
+.was-validated .form-control:invalid
+  border-color colorRed
+  padding-right 0
+  background-image none
+
+.form-control.is-invalid:focus
+.was-validated .form-control:invalid:focus
+  border-color colorRed
+  outline none
+
+.custom-control-input.is-valid~.custom-control-label
+.was-validated .custom-control-input:valid~.custom-control-label
+  color colorColdGreen
+
+.custom-control-input.is-invalid~.custom-control-label
+.was-validated .custom-control-input:invalid~.custom-control-label
+  color colorRed
+
+/** Page **/
+p
+  margin-bottom 20px
+
+ul
+  margin-bottom 20px
+
+.page
+  padding-top 100px
+
+  @media (min-width 768px)
+    padding-top 150px
+
+  @media (min-width 1440px)
+    padding-top 175px
+
+.course-container
+  display flex
+  margin-bottom 22px
+
+.course-number
+  font-family fontHeading
+  font-size 18px
+  line-height 1.5
+  text-transform uppercase
+  color colorWarmGreen
+  margin-right 16px
+
+  @media (min-width 768px)
+    line-height 1.3
+
+  @media (min-width 1440px)
+    font-size 28px
+
+  @media (min-width 1921px)
+    font-size 42px
